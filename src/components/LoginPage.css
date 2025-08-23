@@ -1,0 +1,132 @@
+/* 🌌 Full Page Background with Gradient Animation */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #667eea, #764ba2, #6dd5ed, #2193b0);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  padding: 20px;
+}
+
+/* 🎨 Animated Background */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🪟 Frosted Glass Card */
+.login-card {
+  background: rgba(255, 255, 255, 0.15); /* Transparent white */
+  backdrop-filter: blur(15px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(15px);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* ✨ Title Styling */
+.login-title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* 📋 Form Fields */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #eee;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* 🔘 Buttons */
+.login-btn, .register-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Login Button */
+.login-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #5a6fd8, #6a42a2);
+  transform: translateY(-2px);
+}
+
+/* Register Button */
+.register-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.register-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ⚠️ Error Message */
+.error-message {
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  color: #ffb3b3;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* 🛠 Debug Info */
+.debug-info {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.debug-info small {
+  display: block;
+  color: #bbb;
+  font-size: 0.8rem;
+}

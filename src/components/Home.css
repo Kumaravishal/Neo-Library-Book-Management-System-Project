@@ -1,0 +1,161 @@
+/* Home.css */
+
+.home-container {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    background: #f9f9fb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .home-nav .nav-btn {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 0.95rem;
+  }
+  
+  .home-nav .nav-btn:hover {
+    background: #1d6fa5;
+  }
+  
+  /* Hero Section with background image */
+  .hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 2rem;
+    min-height: 80vh;
+    background: url("https://stars-ai.com/wp-content/uploads/2023/10/online-library-system.jpg")
+      no-repeat center center/cover;
+    color: white;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); /* Dark overlay */
+  }
+  
+  .hero-content {
+    position: relative;
+    max-width: 800px;
+    z-index: 1;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .action-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .action-btn.primary {
+    background: #27ae60;
+    color: white;
+  }
+  
+  .action-btn.primary:hover {
+    background: #1e874b;
+  }
+  
+  .action-btn.secondary {
+    background: #e74c3c;
+    color: white;
+  }
+  
+  .action-btn.secondary:hover {
+    background: #c0392b;
+  }
+  
+  /* Features Section */
+  .features-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+  }
+  
+  .features-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .feature-card {
+    background: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Footer */
+  .home-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: white;
+    margin-top: auto;
+    font-size: 0.9rem;
+  }
+  
