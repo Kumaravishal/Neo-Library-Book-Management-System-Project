@@ -52,7 +52,7 @@ const Register = () => {
   return (
     <div className="register-container">
       <form onSubmit={handleSubmit} className="register-card">
-        <h2 className="title">Your Library Account</h2>
+        <h2 className="title">Create Your Library Account</h2>
 
         {error && <p className="error">{error}</p>}
 
@@ -60,7 +60,7 @@ const Register = () => {
           <label>Username</label>
           <input
             name="username"
-            placeholder="your username"
+            placeholder="enter your username"
             value={form.username}
             onChange={handleChange}
             required
